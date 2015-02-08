@@ -1,0 +1,400 @@
+$color1: #FFEBBA
+$color2: #74beb5
+$color3: #6a205f
+$color3-light: #c8adc4
+$color-dark: #3e3e3e
+$color-bg: #007685
+$color4: #005F72
+
+$border-top: dashed 3px $color2
+$category-padding: 40px 20px 90px 20px
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../font/Roboto-Regular.ttf')
+  font-weight: 400
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../font/Roboto-Bold.ttf')
+  font-weight: 700
+
+@font-face
+  font-family: 'Roboto'
+  src: url('../font/Roboto-Light.ttf')
+  font-weight: 300
+
+@font-face
+  font-family: 'Pacifico'
+  src: url('../font/Pacifico.ttf')
+  font-weight: 400
+
+body
+  padding: 0
+  margin: 50px 0 0 0
+  font-family: 'Roboto', sans-serif
+  background: $color-bg url('../img/bg.jpg') center 0 no-repeat
+  color: #FFFFFF
+  font-size: 20px
+  text-align: center
+  background-size: 100%
+
+.col
+  width: 50%
+  margin: 0 auto 0 auto
+  @media screen and (max-width: 1024px)
+    width: 100%
+
+
+.grid-50
+  padding: 0
+
+.hackcup-logo
+  background: url('../img/ic_logo@2x.png') center 0 no-repeat
+  height: 324px
+  @media screen and (max-width: 400px)
+    background-size: 100%
+    margin: 0 10px 0 10px
+
+.header
+  text-align: center
+
+.header .subtitle
+  margin-top: 20px
+  color: $color1
+
+.header .title
+  font-size: 50px
+  color: $color1
+  font-weight: 300
+  @media screen and (max-width: 320px)
+    font-size: 40px
+
+.header .custom-title
+  font-family: 'Pacifico', cursive
+
+.header .date
+  margin-top: 20px
+  font-size: 40px
+  @media screen and (max-width: 320px)
+    font-size: 30px
+
+.key-container
+  background: url('../img/ic_grid@2x.png') center 0 no-repeat
+  height: 472px
+  width: 480px
+  margin: 200px auto 0 auto
+  position: relative
+  @media screen and (max-width: 480px)
+    width: 320px
+    background-size: 100%
+    margin: 100px auto 0 auto
+    height: 350px
+
+#key1
+  position: absolute
+  top: 50px
+  left: 34px
+  font-size: 75px
+  width: 168px
+  text-align: center
+  font-weight: 700
+  @media screen and (max-width: 480px)
+    top: 20px
+    left: 23px
+    width: 112px
+    font-size: 65px
+
+#key2
+  position: absolute
+  top: 50px
+  left: 282px
+  font-size: 75px
+  width: 168px
+  text-align: center
+  font-weight: 700
+  @media screen and (max-width: 480px)
+    top: 20px
+    left: 188px
+    width: 112px
+    font-size: 65px
+
+#key1-desc
+  position: absolute
+  top: 160px
+  left: 34px
+  width: 168px
+  text-align: center
+  font-size: 25px
+  text-transform: uppercase
+  @media screen and (max-width: 480px)
+    top: 107px
+    left: 23px
+    width: 112px
+    font-size: 16px
+
+#key2-desc
+  position: absolute
+  top: 160px
+  left: 282px
+  width: 168px
+  text-align: center
+  font-size: 25px
+  text-transform: uppercase
+  @media screen and (max-width: 480px)
+    top: 107px
+    left: 188px
+    width: 112px
+    font-size: 16px
+
+#key3
+  color: $color1
+  font-weight: 700
+  position: absolute
+  top: 292px
+  left: 145px
+  font-size: 75px
+  width: 194px
+  @media screen and (max-width: 480px)
+    top: 188px
+    left: 97px
+    font-size: 55px
+    width: 129px
+
+.description-container
+  padding: $category-padding
+
+.thin
+  font-weight: 300
+
+.info-container
+  background-color: $color3
+  padding: 40px
+  color: #FFFFFF
+  font-family: "Gudea", sans-serif
+  font-size: 20px
+  line-height: 40px
+
+.participant-container
+  border-top: $border-top
+  padding: $category-padding
+
+.header-category
+  background: url('../img/ic_category_header.png') center 0 no-repeat
+  height: 97px
+  margin: 0 auto 30px auto
+  position: relative
+  font-family: "Pacifico", cursive
+  font-size: 35px
+  line-height: 77px
+  background-size: contain
+  min-height: 100px
+  @media screen and (max-width: 420px)
+    font-size: 30px
+    line-height: 57px
+  @media screen and (max-width: 320px)
+    line-height: 45px
+    width: 300px
+    height: 70px
+    font-size: 25px
+    margin-left: -10px
+
+.price-container
+  padding: $category-padding
+  background-color: $color4
+
+.price-info
+  text-transform: uppercase
+
+.price-info .big
+  font-size: 55px
+  @media screen and (max-width: 480px)
+    font-size: 45px
+
+.price-info .color
+  color: $color1
+
+.price-info .thin
+  font-size: 35px
+
+.header-price
+  background: url('../img/ic_logo_winner.png') center 0 no-repeat
+  height: 314px
+  margin: 0 auto 0 auto
+  position: relative
+  @media screen and (max-width: 480px)
+    height: 250px
+    width: 350px
+    background-size: 100%
+  @media screen and (max-width: 320px)
+    width: 300px
+    background-size: 100%
+    margin-left: -10px
+
+.header-price .label
+  color: $color1
+  position: absolute
+  font-size: 30px
+  font-family: "Pacifico", cursive
+  width: 100%
+  top: 232px
+  @media screen and (max-width: 480px)
+    top: 189px
+  @media screen and (max-width: 320px)
+    top: 159px
+
+.key-date-container
+  padding: $category-padding
+  background-color: $color-bg
+
+.key-date-container .header-category
+  text-align: center
+
+.key-date-container .label
+  color: $color1
+  font-weight: 700
+
+.key-date-container .value
+  font-weight: 300
+  margin-bottom: 20px
+
+.agenda-container
+  border-top: $border-top
+  padding: $category-padding
+  background-color: $color-bg
+
+.agenda-container .header-category
+  text-align: center
+
+.agenda-container .day
+  margin-top: 20px
+  color: $color1
+  font-size: 38px
+  font-family: 'Pacifico', cursive
+  @media screen and (max-width: 320px)
+    font-size: 35px
+
+.agenda-container .label
+  font-weight: 700
+
+.agenda-container .value
+  font-weight: 300
+  margin-bottom: 20px
+
+.ready-container
+  background-color: $color3
+  padding: $category-padding
+
+.ready-container .title
+  font-size: 35px
+
+.loading-dot
+  font-size: 35px
+
+.note-subscription
+  font-size: 24px
+  font-weight: 300
+
+.place-container
+  padding: $category-padding
+
+.address-container .color
+  color: $color1
+
+.footer
+  padding: 60px 0 60px 0
+  background-color: $color4
+
+.partner-list
+  background: url("../img/ic-partner.png") center 0 no-repeat
+  width: 90%
+  height: 173px
+  margin: 0 auto 0 auto
+  position: relative
+  background-size: 100%
+  max-width: 700px
+
+.partner-link
+  float: left
+  margin-top: 5%
+  height: 60%
+
+.partner-link.partner-link-1
+  width: 20%
+  margin-left: 7%
+
+.partner-link.partner-link-2
+  width: 9%
+  margin-left: 2%
+
+.partner-link.partner-link-3
+  width: 14%
+  margin-left: 3%
+
+.partner-link.partner-link-4
+  width: 12%
+  margin-left: 3%
+
+.partner-link.partner-link-5
+  width: 19%
+  margin-left: 3%
+
+.btn
+  background-color: $color1
+  height: 75px
+  width: 80%
+  font-size: 35px
+  margin: 30px auto 0 auto
+  padding-top: 8px
+  text-transform: uppercase
+  position: relative
+  @media screen and (max-width: 480px)
+    width: auto
+
+.btn.light
+  width: 60%
+  height: 50px
+  font-size: 25px
+  line-height: 50px
+  text-transform: none
+  @media screen and (max-width: 480px)
+    width: auto
+
+.btn .arrow
+  position: absolute
+  right: 4%
+  font-size: 40px
+  font-family: "Roboto", sans-serif
+  font-weight: 300
+  line-height: 60px
+  color: $color3
+
+.btn.dark
+  background-color: $color3
+  color: #FFFFFF
+
+.map
+  margin: -50px 20px 0 20px
+  @media screen and (min-width: 1024px)
+    margin: -50px 0 0 0
+
+.btn a
+  top: 0
+  left: 0
+  line-height: 80px
+  width: 100%
+  height: 100%
+  position: absolute
+  color: $color3
+  text-decoration: none
+  box-shadow: 0 5px 30px rgba(0,0,0,.2)
+
+.btn.light a
+  line-height: 60px
+
+.btn a:hover
+  color: $color3
+
+a
+  color: #FFFFFF
+  text-decoration: none

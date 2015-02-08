@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" ng-app="fourmeez">
+<head>
+    <meta charset="utf-8">
+    <title>Fourmeez Web Site</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Fourmeez inscription particulier"/>
+    <meta name="keywords" content="fourmeez,artisans,particuliers,artisans,plomberie"/>
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet" href="css/skel.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="js/app.js"></script>
+    <!--  <script src="js/animations.js"></script>-->
+    <script src="js/controllers.js"></script>
+    <!--  <script src="js/filters.js"></script>-->
+    <script src="js/services.js"></script>
+</head>
+<body>
+
+<div>
+    <ng-include src="'view/header.html'"></ng-include>
+    <div ng-view></div>
+    <ng-include src="'view/footer.html'"></ng-include>
+</div>
+
+
+</body>
+</html>

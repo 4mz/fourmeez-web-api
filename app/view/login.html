@@ -1,0 +1,13 @@
+<body ng-app="fourmeez" ng-controller="UserAuthCtrl">
+  <ion-content padding="true">
+    <form ng-submit="signIn()">
+      <label>Login :</label>
+      <input id="username" name="username" placeholder="Email" type="text" required="" ng-model="userData.username"/>
+      <input id="password" name="password" placeholder="Password" type="password" required="" ng-model="userData.password"/>
+      <button type="submit" class="button button-positive button-block">Sign In</button>
+    <ul>
+        <li ng-repeat="data in data"> {{ data }} </li>
+    </ul>
+    </form>
+  </ion-content>
+</body>

@@ -1,0 +1,22 @@
+{
+  "name": "fourmeez",
+  "description": "AngularJs application for Fourmeez web site",
+  "version": "0.0.0",
+  "homepage": "https://github.com/fourmeez/fourmeez-site",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.3.x",
+    "angular-mocks": "1.3.x",
+    "angular-cookies": "1.3.x",
+    "jquery": "1.10.2",
+    "bootstrap": "~3.1.1",
+    "angular-route": "1.3.x",
+    "angular-resource": "1.3.x",
+    "angular-animate": "1.3.x",
+    "angular-sanitize": "1.3.x"
+  },
+  "resolutions": {
+    "angular": "1.3.12"
+  }
+}
